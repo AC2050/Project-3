@@ -1,0 +1,159 @@
+h1 {
+	font-family: "Georgia";
+	text-decoration: underline;
+	text-align: center;
+	width: 80%;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+ }
+ 
+#site-footer {
+	background-color: #FAFAD2;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid Black;
+	padding: 5px;
+	margin-top: 10px;
+ }
+ 
+#site-footer address p {
+	font-family: Georgia;
+	padding: 0;
+	margin: 5px 0;
+ }
+ 
+ #site-footer p{
+	padding: 0;
+	margin: 0;
+ }
+ 
+nav ul {
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+ 
+nav li {
+	display: inline;
+	padding: 10px;
+}
+ 
+nav a {
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+  color: blue;
+  transition: .2s background-color;
+}
+
+nav a:hover {
+  background-color: #FBE908;
+}
+
+nav {
+  max-width: 90%;
+  height: auto;
+  font-size: 16px;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  background-color: #FAFAD2;
+  margin-left: auto;
+  margin-right: auto;
+  border: .1em solid black;
+
+}
+
+#sitetitle {
+	text-align: center;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+.clearme {
+	clear: both;
+}
+
+body {
+	background: url("lantern-background.jpg");
+}
+
+#indexsec p {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#iitvid {
+
+}
+
+#me_img {
+	border-radius: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: middle;
+	max-width: 99%;
+}
+
+.sectionboxA {
+  border: .1em solid black;
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+  padding: 0.5em;
+  margin-bottom: 2em;
+  display: block;
+  background-color: #FAFAD2;
+}
+
+
+.sectionboxR {
+  border: .1em solid black;
+  box-sizing: content-box;
+  padding-left: 1em;
+  width: auto;
+  max-width: 35em;
+  margin: 0 auto;
+  background-color: #FAFAD2;
+}
+
+#iitcon {
+  float: right;
+
+}
+#mycon {
+  float: left;
+
+}
+
+#about {
+  max-width: 37em;
+  margin: 0 auto;
+  
+}
+
+.active {
+	background-color: #B4B4B4;
+}
+
+#banner {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#indexsec {
+  border: .1em solid black;	
+  background-color: #FAFAD2;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#hi {
+	text-align: center;
+}
