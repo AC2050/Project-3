@@ -32,6 +32,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	margin: 0;
+	padding: 0;
 }
 
 ol, ul {
@@ -55,20 +57,20 @@ table {
 
 /*end reset*/
 
-h1 {
-	font-family: "Georgia";
-	text-decoration: underline;
-	text-align: center;
-	width: 80%;
-	overflow: hidden;
-	margin-left: auto;
-	margin-right: auto;
- }
- 
-nav ul {
-	margin: 0;
-	padding: 0;
-	height: auto;
+h2 {
+	font-weight: bold;
+	font-size: 1.25em;
+	padding: 5px 0;
+}
+
+h3 {
+	font-weight: 580;
+	font-size: 1.1em;
+	padding: 5px 0;
+}
+
+p {
+	padding: 2.5px 0;
 }
  
 nav li {
@@ -89,26 +91,32 @@ nav a:hover {
 }
 
 nav {
-	max-width: 90%;
+	width: 100%;
 	height: auto;
 	font-size: 16px;
 	font-family: Tahoma, Geneva, sans-serif;
 	font-weight: bold;
 	text-align: center;
 	background-color: #FAFAD2;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
 	margin-left: auto;
 	margin-right: auto;
-	border: .1em solid black;
+	padding: 0;
 }
 
 body {
 	background: url("https://ac2050.github.io/Project-3/images/lantern-background.jpg");
+	overflow-x: hidden;
 }
 
 #indexsec p {
-	width: 80%;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 5px 0;
+	text-align: center;
+	font-size: 1.1em;
 }
 
 #me_img {
@@ -152,22 +160,25 @@ body {
 
 #hi {
 	text-align: center;
+	font-size: 1.5em;
+	font-weight: 600;
 }
 
 #site-footer {
 	background-color: #FAFAD2;
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	border: 2px solid Black;
-	padding: 5px;
-	margin-top: 10px;
+	width: 100%;
+
+	border-top: 2px solid Black;
+	border-bottom: 2px solid Black;
+	padding-top: 2px;
+	margin-top: 20px;
+	text-align:center;
  }
  
 #site-footer address p {
 	font-family: Georgia;
 	padding: 0;
-	margin: 5px 0;
+	margin: 2px 0;
  }
  
  #site-footer p{
@@ -179,20 +190,35 @@ body {
 	text-align: center;
 	margin-left: auto;
 	margin-right:auto;
+	text-shadow:  0 0 0.25em white;
+	font-size: 3em;
+	padding: 0.25em;
 }
  
 .active {
 	background-color: #B4B4B4;
 }
+
+.pagetitle {
+	font-family: Tahoma, Geneva, sans-serif;
+	text-decoration: underline;
+	text-align: center;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	text-shadow:  0 0 0.25em white;
+	font-weight: 600;
+ }
  
 .sectionboxR {
 	border: .1em solid black;
 	box-sizing: content-box;
-	padding-left: 1em;
+	padding: 1em;
 	width: auto;
 	max-width: 35em;
 	margin: 0 auto;
 	background-color: #FAFAD2;
+	
 }
 
 .sectionboxA {
@@ -208,4 +234,8 @@ body {
 
 .clearme {
 	clear: both;
+}
+
+.resumesec ul li {
+	padding: 5px 0;
 }
