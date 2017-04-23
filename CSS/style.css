@@ -93,7 +93,7 @@ nav a:hover {
 nav {
 	width: 100%;
 	height: auto;
-	font-size: 16px;
+	font-size: 1.3em;
 	font-family: Tahoma, Geneva, sans-serif;
 	font-weight: bold;
 	text-align: center;
@@ -108,6 +108,8 @@ nav {
 body {
 	background: url("https://ac2050.github.io/Project-3/images/lantern-background.jpg");
 	overflow-x: hidden;
+	height: 100%;
+	min-height: 100%;
 }
 
 #indexsec p {
@@ -147,7 +149,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
-	border: .2em solid black;
+	border: .1em solid black;
 }
 
 #indexsec {
@@ -167,11 +169,10 @@ body {
 #site-footer {
 	background-color: #FAFAD2;
 	width: 100%;
-
 	border-top: 2px solid Black;
 	border-bottom: 2px solid Black;
 	padding-top: 2px;
-	margin-top: 20px;
+	margin-top: 2em;
 	text-align:center;
  }
  
@@ -188,11 +189,16 @@ body {
  
 #sitetitle {
 	text-align: center;
-	margin-left: auto;
-	margin-right:auto;
-	text-shadow:  0 0 0.25em white;
 	font-size: 3em;
-	padding: 0.25em;
+	padding: 0.17em;
+	background-color: #FAFAD2;
+	width: 100%;
+	border-bottom: 2px solid Black;
+}
+
+#map {
+	hight: 500px;
+	width: 500px;
 }
  
 .active {
@@ -204,9 +210,8 @@ body {
 	text-decoration: underline;
 	text-align: center;
 	overflow: hidden;
-	margin-left: auto;
-	margin-right: auto;
-	text-shadow:  0 0 0.25em white;
+	width: 100%;
+	text-shadow: 0 0 0.25em white;
 	font-weight: 600;
  }
  

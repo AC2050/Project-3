@@ -12,9 +12,10 @@
   </head>
   <body>
     <header class="clearme">
+      <h2 id="sitetitle">Austin Cheng's Website</h2>
       <img id="banner" src="https://ac2050.github.io/Project-3/images/top-banner-chicago.jpg"
         alt="my favorite city">
-      <h2 id="sitetitle">Austin Cheng's Website</h2>
+
         <nav id="navbar">
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -24,7 +25,12 @@
         </nav>
     </header>
     
-    <h1 class='pagetitle'>About</h1>
+    <h1 class='pagetitle'>Info</h1>
+    <div id='map'></div>
+    <script type='text/javascript' src='JS/mapScript.js'></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAd-EceObrxvGEKaWbo6KtUheJVsky_YR4&callback=initMap">
+    </script>
     <div id="about">
       <section id="mycon" class="sectionboxA">
         <h2>Austin's Contact Info</h2>
@@ -53,7 +59,6 @@
       </section>
     </div>
 
-	
     <footer id="site-footer" class="clearme">
       <a href="#top">Back To Top</a>
       <address>
