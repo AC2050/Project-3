@@ -199,10 +199,10 @@ body {
 #slidercontainer {
 	width: 600px;
 	height: 600px;
-	padding: 10px;
 	box-sizing: border-box;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 20px 0;
 }
 
 #prev{
@@ -215,12 +215,13 @@ body {
 }
 
 #image_slider{
-	width: 600px;
 	position: relative;
 	height: auto;
 	list-style: none;
 	overflow: hidden;
 	float: left;
+	padding: 0;
+	margin: 0;
 }
 #image_slider li{
 	position: relative;
@@ -230,13 +231,13 @@ body {
 .slider_wrapper{
 	overflow: hidden;
 	position:relative;
-	height:600px;
+	height: 500px;
 	top:auto;
 }
 
 .cntrl{
 	position:absolute;
-	top: 300px;
+	top: 240px;
 	height: 50px;
 	width: 30px;
 	opacity: 0.6;
@@ -255,7 +256,7 @@ body {
 	text-align: center;
 	overflow: hidden;
 	width: 100%;
-	text-shadow: 0 0 0.25em white;
+	text-shadow: 0 0 2em white;
 	font-weight: 600;
  }
  
