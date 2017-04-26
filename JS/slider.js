@@ -9,13 +9,12 @@ var imageWidth;
 var prev, next;
 var currentPostion = 0;
 var currentImage = 0;
-//custom
+// next 4 variables custom
 var imagename = ["Maxwell on 31st", "Taqueria San Jose on Halsted", "Ricobene's on 26th",
 	"The Noodle on Wentworth", "Pheonix Restaurant on Archer Ave"];
-//custom
 var imagep = document.getElementById("descript");
-//custom
 var current = 0;
+var locked = false;
 
 function init(){
 	ul = document.getElementById('image_slider');
@@ -55,7 +54,7 @@ function slideTo(imageToGo){
 	direction = currentImage > imageToGo ? 1 : -1;
 	currentPostion = -1 * currentImage * imageWidth;
 	var opts = {
-		duration:1000,
+		duration:500,
 		delta:function(p){return p;},
 		step:function(delta){
 			ul.style.left = parseInt(currentPostion + direction * delta * imageWidth * numOfImageToGo) + 'px';
@@ -66,37 +65,58 @@ function slideTo(imageToGo){
 }
 
 function onClickPrev(){
+	if(!locked){  //custom
 	if (currentImage == 0){
 		slideTo(imageNumber - 1);
-		//custom
-		imagep.innerHTML = imagename[4];
-		//custom
-		current = 4;
+		toFirst();  //custom
 	} 		
 	else{
 		slideTo(currentImage - 1);
-		//custom
-		current--;
-		//custom
-		imagep.innerHTML = imagename[current];
+		toPrev();
+	}
+	locked = true;  //custom
+	setTimeout(unlock, 500);  //custom
 	}
 }
 
 function onClickNext(){
+	if(!locked){  //custom
 	if (currentImage == imageNumber - 1){
 		slideTo(0);
-		//custom
-		imagep.innerHTML = imagename[0];
-		//custom
-		current = 0;
+		toLast();
 	}		
 	else{
 		slideTo(currentImage + 1);
-		//custom
-		current++;
-		//custom
-		imagep.innerHTML = imagename[current];
-	}		
+		toNext();
+	}
+	locked = true;  //custom
+	setTimeout(unlock, 500);  //custom
+	}
+}
+
+//all remaining functions custom
+function toFirst(){
+	imagep.innerHTML = imagename[4];
+	current = 4;
+}
+
+function toLast(){
+	imagep.innerHTML = imagename[0];
+	current = 0;
+}
+
+function toNext(){
+	current++;
+	imagep.innerHTML = imagename[current];
+}
+
+function toPrev(){
+	current--;
+	imagep.innerHTML = imagename[current];
+}
+
+function unlock(){
+	locked = false;
 }
 
 window.onload = init;
